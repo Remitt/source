@@ -1,0 +1,2 @@
+debian/bin/remittd usr/bin
+src/remittd usr/lib/remitt

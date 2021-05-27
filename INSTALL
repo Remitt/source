@@ -1,0 +1,9 @@
+Building Remitt
+
+See doc/readme-qt.rst for instructions on building Remitt QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Remitt.
+
+See doc/build-*.txt for instructions on building remittd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Remitt.

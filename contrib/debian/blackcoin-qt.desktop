@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Remitt
+Comment=Remitt P2P Cryptocurrency
+Comment[fr]=Remitt, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Remitt, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/remitt-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/remitt;
+Categories=Office;

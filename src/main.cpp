@@ -1027,7 +1027,12 @@ int64_t GetProofOfStakeRewardPercent(int nHeight)
 int64_t GetProofOfStakeReward(int nHeight, int64_t nCoinAge, int64_t nFees)
 {
     int64_t COIN_YEAR_REWARD = GetProofOfStakeRewardPercent(nHeight);
-    int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+    
+    int64_t nSubsidy;
+    if (nHeight >= 600000)
+        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+    else
+        nSubsidy = 0;
 
     LogPrint("creation", "GetProofOfStakeReward(): create=%s nCoinAge=%d\n", FormatMoney(nSubsidy), nCoinAge);
 

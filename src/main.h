@@ -56,7 +56,7 @@ static const int nCoinbaseMaturity = 10;            // 6 blocks
 static const int nCoinbaseMaturityADJ = 10;            // 150 blocks
 
 int64_t GetProofOfStakeRewardPercent(int nHeight);
-static const int64_t COIN_YEAR_REWARD_V1 = 0 * CENT;
+static const int64_t COIN_YEAR_REWARD_V1 = 1 * CENT;
 static const int64_t COIN_YEAR_REWARD_V2 = 5 * CENT; 
 
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 4000000; }
